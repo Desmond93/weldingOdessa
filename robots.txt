@@ -1,0 +1,7 @@
+User-agent:*
+Disallow:
+
+User-agent: YandexBot
+Disallow:
+Host: https://www.master-remonta.od.ua
+Sitemap: https://www.master-remonta.od.ua/sitemap.xml

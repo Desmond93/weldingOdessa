@@ -1,0 +1,54 @@
+Redirect 301 /index https://welding.od.ua/
+Redirect 301 /svarka_metallokonstruktsiy https://welding.od.ua/services/welding_main.html
+Redirect 301 /krovlya https://welding.od.ua/services/roofing_main.html
+Redirect 301 /polikarbonat https://welding.od.ua/services/polycarbonate_main.html
+Redirect 301 /dachnyye_domiki https://welding.od.ua/services/summer_houses.html
+Redirect 301 /pavilony https://welding.od.ua/services/pavilions.html
+Redirect 301 /avtomoyki https://welding.od.ua/services/car_washes.html
+Redirect 301 /angary https://welding.od.ua/services/hangars.html
+Redirect 301 /magaziny https://welding.od.ua/services/shops.html
+Redirect 301 /karkasnyye_doma https://welding.od.ua/services/frame_houses.html
+Redirect 301 /turbazy https://welding.od.ua/services/chalets.html
+Redirect 301 /tokarnyye_raboty https://welding.od.ua/services/turning_works.html
+Redirect 301 /frezernyye_raboty https://welding.od.ua/services/milling_works.html
+Redirect 301 /uslugi_svarshchika https://welding.od.ua/services/welder_services.html
+Redirect 301 /svarka_i_usileniye_nesushchikh_sten https://welding.od.ua/services/welding_and_strengthening_of_load_bearing_walls.html
+Redirect 301 /contacts https://welding.od.ua/contacts/contacts.html
+Redirect 301 /photo https://welding.od.ua/photo/photo.html
+Redirect 301 /video https://welding.od.ua/video/video.html
+Redirect 301 /price https://welding.od.ua/prices/prices.html
+Redirect 301 /svarka_metallokonstruktsiy/navesy https://welding.od.ua/services/welding_1.canopies.html
+Redirect 301 /svarka_metallokonstruktsiy/kozyrki https://welding.od.ua/services/welding_2.visors.html
+Redirect 301 /svarka_metallokonstruktsiy/vorota https://welding.od.ua/services/welding_3.goal.html
+Redirect 301 /svarka_metallokonstruktsiy/zabory_i_ograzhdeniya https://welding.od.ua/services/welding_4.fences.html
+Redirect 301 /svarka_metallokonstruktsiy/arki https://welding.od.ua/services/welding_5.arches.html
+Redirect 301 /svarka_metallokonstruktsiy/reshetki_na_okna https://welding.od.ua/services/welding_6.lattices.html
+Redirect 301 /svarka_metallokonstruktsiy/dveri https://welding.od.ua/services/welding_7.doors.html
+Redirect 301 /svarka_metallokonstruktsiy/kalitki https://welding.od.ua/services/welding_8.wickets.html
+Redirect 301 /svarka_metallokonstruktsiy/lestnitsy https://welding.od.ua/services/welding_9.stairs.html
+Redirect 301 /svarka_metallokonstruktsiy/balkony https://welding.od.ua/services/welding_10.balconies.html
+Redirect 301 /svarka_metallokonstruktsiy/garazhi https://welding.od.ua/services/welding_11.garages.html
+Redirect 301 /svarka_metallokonstruktsiy/kioski https://welding.od.ua/services/welding_12.kiosks.html
+Redirect 301 /svarka_metallokonstruktsiy/mangaly https://welding.od.ua/services/welding_13.braziers.html
+Redirect 301 /krovlya/montazh_metallocherepitsy https://welding.od.ua/services/roofing_1.installation_of_metal_tiles.html
+Redirect 301 /krovlya/montazh_profnastila https://welding.od.ua/services/roofing_2.installation_of_profiled_sheeting.html
+Redirect 301 /krovlya/montazh_bitumnoy_cherepitsy https://welding.od.ua/services/roofing_3.installation_of_shingles.html
+Redirect 301 /krovlya/montazh_keramicheskoy_cherepitsy https://welding.od.ua/services/roofing_4.installation_of_ceramic_tiles.html
+Redirect 301 /krovlya/ukladka_yevroruberoida https://welding.od.ua/services/roofing_5.euro_ruberoid_laying.html
+Redirect 301 /krovlya/krovlya_iz_shifera https://welding.od.ua/services/roofing_6.slate_roofing.html
+Redirect 301 /krovlya/montazh_vodostochnykh_sistem https://welding.od.ua/services/roofing_7.installation_of_drainage_systems.html
+Redirect 301 /polikarbonat/navesy_polikarbonat https://welding.od.ua/services/polycarbonate_1.canopies.html
+Redirect 301 /polikarbonat/kozyrki_polikarbonat https://welding.od.ua/services/polycarbonate_2.visors.html
+Redirect 301 /polikarbonat/avtoparkovki_polikarbonat https://welding.od.ua/services/polycarbonate_3.car_parking.html
+Redirect 301 /polikarbonat/teplitsy_polikarbonat https://welding.od.ua/services/polycarbonate_4.greenhouses.html
+Redirect 301 /polikarbonat/zabory_polikarbonat https://welding.od.ua/services/polycarbonate_5.fences.html
+Redirect 301 /polikarbonat/besedki_polikarbonat https://welding.od.ua/services/polycarbonate_6.arbors.html
+Redirect 301 /polikarbonat/balkony_polikarbonat https://welding.od.ua/services/polycarbonate_7.balconies.html
+Redirect 301 /polikarbonat/navesy_dlya_basseynov https://welding.od.ua/services/polycarbonate_8.pool_sheds.html
+RewriteCond %{REQUEST_FILENAME} robots.txt$ [NC]
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>

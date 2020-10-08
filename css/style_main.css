@@ -1,0 +1,1873 @@
+body {
+    background-color: #211c17;
+}
+
+.menu_fixed {
+    position: fixed;
+    z-index: 9999;
+    left: 70vw;
+}
+
+.main .menu_fixed {
+    display: none;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+main a {
+    cursor: pointer;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+    -webkit-align-content: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;  
+    position: absolute; 
+    top: 1.6vw; 
+    left: 2vw;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+main nav {
+    position: relative;
+    opacity: 1;
+
+}
+
+main nav h4 {
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+.menu_big .menu_item {
+    font-size: 2vw;
+    font-family: "Chalet";
+    color: rgb(248, 137, 3);
+    border: 0.14vw solid rgba(248, 137, 3, 0);
+    -webkit-transition: border 0.5s linear;
+    -o-transition: border 0.5s linear;
+    transition: border 0.5s linear;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw 0;
+}
+
+.menu_big  .menu_item:hover {
+    border-color: rgba(248, 137, 3, 1);
+}
+
+.menu_big nav h4 {
+    font-size: 2vw;
+    font-family: "Chalet";
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+nav label, nav a {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+    -webkit-align-content: center;
+            align-content: center;
+    height: 2.5vw;
+    width: 20vw;
+    padding: 0 0.5vw;
+    background-color: #211c17;
+    border: 0.14vw solid rgb(248, 137, 3);
+    -webkit-border-radius: 0.14vw;
+            border-radius: 0.14vw;
+    font-weight: 600;
+    letter-spacing: -0.07vw;
+    font-family: "Chalet";
+    color: rgb(248, 137, 3);
+    font-size: 1.5vw;
+    display: block;
+    text-align: right;
+
+}
+
+.menu_big nav label, .menu_big nav a {
+    width: auto;
+    font-size: 2vw;
+    text-align: left;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.menu_big nav ul label, .menu_big nav ul a {
+    font-size: 1.5vw;
+}
+
+.menu_big nav label:hover, .menu_big nav a:hover {
+    color: rgb(248, 137, 3);
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.menu_big nav ul {
+    width: 24vw;
+}
+
+.menu_big nav ul ul {
+    width: 25vw;
+}
+
+nav ul .right_weld {
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+nav ul li .weld {
+    top: 0;
+}
+
+nav label:hover, nav a:hover {
+    border: 0.14vw solid #211c17;
+    background-color: rgb(248, 137, 3);
+    color: #211c17;
+}
+
+.third nav label, .third nav a {
+    background-color: #14110e;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: none;
+}
+
+nav label {
+    position: relative;
+}
+nav label:before, nav label:after {  
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.14vw;
+    height: 0.84vw;
+    background: rgb(248, 137, 3);
+    -webkit-border-radius: 0.14vw;
+            border-radius: 0.14vw;
+}
+
+.menu_big nav label:before, .menu_big label:after {
+    display: none;
+}
+
+nav label.before_after_color:before {
+    background-color: #211c17;
+}
+
+nav label.before_after_color:after {
+    background-color: #211c17;
+}
+
+nav label:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+nav label:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+nav label.down:before, nav label.down:after {
+    -webkit-transform-origin: center 0.77vw;
+    -ms-transform-origin: center 0.77vw;
+        transform-origin: center 0.77vw;
+    top: 50%;
+    margin-top: -0.42vw;
+    left: 1vw;
+}
+nav label.right:before, nav label.right:after {
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+        transform-origin: left center;
+    top: 50%;
+    left: 1vw;
+}
+nav label.right:before {
+    margin-top: -0.63vw;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+nav label.right:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+nav > label {
+    -webkit-transform: translateZ(0.07vw);
+    transform: translateZ(0.07vw);
+    z-index: 1;
+    margin: 0;
+}
+nav ul {
+    will-change: visibility;
+    -webkit-transition: visibility 0ms ease-out 600ms;
+    -o-transition: visibility 0ms ease-out 600ms;
+    transition: visibility 0ms ease-out 600ms;
+    visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu_big nav ul {
+    top: 1.5vw;
+    left: -0.1vw;
+}
+
+.menu_big nav ul li {
+    background-color: rgba(0,0,0,0.5);
+    border: 0.14vw solid rgba(248, 137, 3, 0);
+    -webkit-transition: border 0.5s linear;
+    -o-transition: border 0.5s linear;
+    transition: border 0.5s linear;
+}
+
+.menu_big nav ul li:hover {
+    border: 0.14vw solid rgba(248, 137, 3);
+}
+
+nav ul li {
+    will-change: transform, opacity;
+    padding: 0.28vw 0;
+    opacity: 0; 
+}
+
+nav ul li:nth-child(1) {
+    -webkit-transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+}
+nav ul li:nth-child(2) {
+    -webkit-transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+}
+nav ul li:nth-child(3) {
+    -webkit-transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+}
+nav ul li:nth-child(4) {
+  -webkit-transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+  transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+  -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+  transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+  transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+}
+nav ul li:nth-child(5) {
+    -webkit-transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+}
+nav ul li:nth-child(6) {
+    -webkit-transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+}
+nav > ul {
+    position: relative;
+    padding-top: 0.28vw;
+    max-height: 0;
+}
+nav > ul > li {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+}
+nav > ul > li > label {
+    -webkit-transform: translateZ(0.035vw);
+    transform: translateZ(0.035vw);
+    margin: 0;
+}
+nav > ul ul {
+    position: absolute;
+    top: -6.1vw;
+    left: -20.5vw;
+}
+
+.menu_big nav > ul ul {
+    left: 24vw;
+    top: -0.15vw;
+}
+
+nav > ul ul > li {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+        transform: translateX(100%);    
+}
+
+.menu_big nav > ul ul > li {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+        transform: translateX(-100%);   
+}
+
+nav ul li ul li a {
+    font-size: 1.3vw;
+}
+nav input {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    margin: 0;
+}
+
+.menu_big nav input {
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+nav input:checked ~ label.down:before, nav input:checked ~ label.down:after {
+    margin-top: -1.12vw;
+}
+nav input:checked ~ label.down:before {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+}
+nav input:checked ~ label.down:after {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+}
+nav input:checked ~ label.right:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+nav input:checked ~ label.right:after {
+    margin-top: -0.21vw;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+nav input:checked ~ ul {
+    visibility: visible;
+    -webkit-transition: visibility 0ms ease-out 0ms;
+    -o-transition: visibility 0ms ease-out 0ms;
+    transition: visibility 0ms ease-out 0ms;
+}
+nav input:checked ~ ul > li {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+        transform: none;
+}
+nav input:checked ~ ul > li:nth-child(1) {
+    -webkit-transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+}
+nav input:checked ~ ul > li:nth-child(2) {
+    -webkit-transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+}
+nav input:checked ~ ul > li:nth-child(3) {
+    -webkit-transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+    transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+}
+nav input:checked ~ ul > li:nth-child(4) {
+    -webkit-transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+}
+nav input:checked ~ ul > li:nth-child(5) {
+    -webkit-transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+}
+nav input:checked ~ ul > li:nth-child(6) {
+    -webkit-transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+}
+nav input:checked ~ ul > li:nth-child(7) {
+    -webkit-transition: opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+    transition: opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+}
+nav input:checked ~ ul > li:nth-child(8) {
+    -webkit-transition: opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+    transition: opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+}
+nav input:checked ~ ul > li:nth-child(9) {
+    -webkit-transition: opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+    transition: opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+}
+nav input:checked ~ ul > li:nth-child(10) {
+    -webkit-transition: opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+    transition: opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+}
+nav input:checked ~ ul > li:nth-child(11) {
+    -webkit-transition: opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+    transition: opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+}
+nav input:checked ~ ul > li:nth-child(12) {
+    -webkit-transition: opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+    transition: opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+}
+nav input:checked ~ ul > li:nth-child(13) {
+    -webkit-transition: opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+    transition: opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+}
+nav input:checked ~ ul > li:nth-child(14) {
+    -webkit-transition: opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+    transition: opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+}
+nav > input {
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(1) {
+    -webkit-transition: opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+    transition: opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms, opacity 100ms ease-out 1400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1400ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(2) {
+    -webkit-transition: opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+    transition: opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms, opacity 100ms ease-out 1300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1300ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(3) {
+    -webkit-transition: opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+    transition: opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms, opacity 100ms ease-out 1200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1200ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(4) {
+    -webkit-transition: opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+    transition: opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms, opacity 100ms ease-out 1100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1100ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(5) {
+    -webkit-transition: opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+    transition: opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms, opacity 100ms ease-out 1000ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 1000ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(6) {
+    -webkit-transition: opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+    transition: opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms, opacity 100ms ease-out 900ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 900ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(7) {
+    -webkit-transition: opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+    transition: opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms, opacity 100ms ease-out 800ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 800ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(8) {
+    -webkit-transition: opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+    transition: opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms, opacity 100ms ease-out 700ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 700ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(9) {
+    -webkit-transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    transition: opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms, opacity 100ms ease-out 600ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 600ms;
+}
+
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(10) {
+    -webkit-transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    transition: opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms, opacity 100ms ease-out 500ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 500ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(11) {
+    -webkit-transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    transition: opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms, opacity 100ms ease-out 400ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 400ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(12) {
+    -webkit-transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+    transition: opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms, opacity 100ms ease-out 300ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 300ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(13) {
+    -webkit-transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    transition: opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms, opacity 100ms ease-out 200ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 200ms;
+}
+nav > input:not(:checked) ~ ul > li input:checked ~ ul li:nth-child(14) {
+    -webkit-transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    transition: opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+    -o-transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms;
+    transition: transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms, opacity 100ms ease-out 100ms, -webkit-transform 150ms cubic-bezier(0, 0.5, 0.5, 1.1) 100ms;
+}
+
+.info {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    z-index: 9999;
+    background-color: rgba(33, 28, 23, 0.7);
+    padding: 0;
+    max-width: 0;
+    max-height: 0;
+    text-align: center;
+}
+
+.info table {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 0;
+    max-height: 0;
+    -webkit-transition: max-width 0.5s;
+    -o-transition: max-width 0.5s;
+    transition: max-width 0.5s;   
+}
+
+.info tbody, .info tr,
+.info .info_cont {
+    height: 100%;
+    width: 100%; 
+    max-width: 0;
+    max-height: 0; 
+    margin: 0 auto;      
+}
+
+.info .info_cont {
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: none;
+    padding: 10vh 0 7vw 0;    
+}
+
+.info .contacts_cont_item_text_forw {
+    font-size: 0vw;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+
+.info p {
+    font-size: 0vw;
+    font-family: 'Chalet';
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    margin-top: 3vw;
+}
+
+.phone_text {
+    position: fixed;
+    left: 7vw;
+    background-color: white;
+    font-size: 0;
+    font-family: 'Chalet';
+    -webkit-border-radius: 0.5vw;
+            border-radius: 0.5vw;
+    padding: 0 1vw;
+    z-index: 9999;
+    max-height: 0;
+    max-width: 0;
+}
+
+.phone_fixed {
+    position: fixed;
+    left: 2vw;
+    height: 5vw;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.phone_fixed img {
+    height: 100%;
+}
+
+.pulse {   
+  -webkit-box-shadow: 0 0 0 rgba(204,169,44, 0.4);   
+          box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+            box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+              box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+              box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+.up_fixed {
+    display: none;
+    position: fixed;
+    right: 1vw;
+    width: 7vw;
+    cursor: pointer;
+    z-index: 9999;
+    height: 5vw;
+}
+
+.up_fixed img {
+    height: 100%;
+}
+
+@-webkit-keyframes up_fixed {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes up_fixed {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.up_fixed:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+}
+
+/*параметры первой секции*/
+.first {
+    height: 50vw;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover; 
+    background-attachment: fixed;
+}
+/*ряд, содержащий нав меню*/
+.first .row {
+    padding: 0;
+    margin: 0; 
+}
+/*убираем отступы у логотипа и контейнера с нав меню*/
+.first .logo {
+    padding: 0;
+    opacity: 1;
+    height: 100%;
+    position: relative;
+    z-index: 9999; 
+}
+
+.first .logo img {
+    height: 120%;
+    opacity: 1;
+}
+/*отступы и высота нав меню*/
+.first .menu {
+    padding: 1.4vw 1vw 1.4vw 1.75vw;
+    height: 7vw;
+}
+
+.first .menu .empty {
+    padding: 0;
+}
+
+.menu_mobile {
+    display: none;
+    background-color: rgba(20, 17, 14, 0.5);
+}
+
+.menu_mobile .row {
+    margin: 0;
+} 
+
+.menu_mobile .menu_item {
+    font-size: 4vw;
+    font-family: "Chalet";
+    color: rgb(248, 137, 3);
+    border: 0.14vw solid rgba(248, 137, 3, 0);
+    -webkit-transition: border 0.5s linear;
+    -o-transition: border 0.5s linear;
+    transition: border 0.5s linear;
+    text-align: center;
+    text-decoration: none;
+    padding: 2vw 0;
+}
+
+.menu_mobile ul {
+    list-style-type: none;
+}
+/*появление границ при наведении*/
+.menu_mobile  .menu_item:hover {
+    border-color: rgba(248, 137, 3, 1);
+}
+
+.accordion-menu {
+    margin: 0;
+    padding: 0;
+}
+/*убираем границы у последнего элемента
+выпадающего списка*/
+li:last-child .dropdownlink {
+    border-bottom: 0;
+}
+/*параметры тригера для выпадающего списка*/
+.dropdownlink {
+    cursor: pointer;
+    display: block;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    text-align: center;
+}
+/*пункты выпадающего списка*/
+.submenuItems {
+    display: none;
+    position: absolute;
+    width: 67vw;
+    left: -10vw;
+    top: 9.4vw;
+    padding: 0 0.7vw 0 0.7vw;
+    text-align: left;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 9999;
+}
+
+.submenuItems li {
+    height: auto;
+    padding: 0;  
+}
+
+.submenuItems li a {
+    text-decoration: none;
+    font-family: "Chalet";
+    font-size: 4vw;
+    color: rgb(248, 137, 3);
+    line-height: 0.8;
+}
+/*изменение цвета пунктов выпадающего списка
+при наведении*/
+.submenuItems li:hover a{
+    color: rgb(251, 209, 157);
+}
+
+/*параметры заголовка первой секции*/
+.first h1 {
+    font-family: "CorvetteDeco";
+    font-size: 8vw;
+    padding-right: 1vw;
+    line-height: 0.5;
+    text-transform: uppercase;
+    position: absolute;
+    left: auto;
+    right: 1vw;
+    top: 35vw;
+    text-align: right;
+    margin: 0;    
+}
+
+h1 p {
+  color: rgb(255, 169, 58);
+  text-shadow: 3px 5px 10px rgb(33, 28, 23);
+}
+/*размер шрифта второго слова
+в заголовке первой секции*/
+.h1_size {
+    font-size: 5vw;
+}
+/*дополнение к первой секции*/
+.first_second {
+    background-color: rgba(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    text-align: center; 
+    -webkit-box-shadow: 0 0 5vw 3vw rgba(0,0,0,1);  
+            box-shadow: 0 0 5vw 3vw rgba(0,0,0,1);
+}
+
+.main .first_second {
+    padding: 5vw 15vw 0 15vw;
+}
+/*параметры заголовков второй-четвёртой секций*/
+.first_second h2, .second h2,
+.third h2, .fourth h2 {
+    font-size: 2vw;
+    font-family: "CorvetteDeco";
+    color: rgb(255, 169, 58);
+    opacity: 0.8;
+    line-height: 0.4;
+    padding-bottom: 2vw;
+    margin: 0;
+}
+/*линии между заголовками и текстом*/
+.first_second .line, .second .line,
+.third .line, .fourth .line {
+    width: 1.75vw;
+    border-top: 0.21vw solid #d4d4d4;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+/*параметры текста второй-четвёртой секций*/
+.first_second p, .second p, .third p, .fourth p,
+.contacts .second .contacts_cont .contacts_cont_item_text {
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    font-family: "Chalet";
+    color: #d4d4d4;
+    line-height: 1.35;
+    opacity: 0.8;
+    font-weight: lighter;
+    margin: 0;
+    padding-bottom: 5vw;
+}
+/*параметры второй-четвёртой секциями*/
+.second, .third, .fourth {
+    background-color: #211c17;
+    width: 100%;
+    height: 100%;
+    padding-top: 2.45vw;
+    text-align: center;
+    padding-bottom: 5vw;
+}
+/*отступы у заголовка второй секции*/
+.second h2 {
+    padding-bottom: 1.4vw;
+}
+/*длина линий между заголовком и текстом*/
+.second .line, .third .line, .fourth .line {
+    width: 3.15vw;
+}
+/*отступы текста*/
+.second p, .third p, .fourth p {
+    padding-top: 1.4vw;
+    padding-bottom: 1vw;
+}
+
+.second .cont .cont_item .cont_item_ins_w img {
+    opacity: 1;
+}
+
+.main .second .text {
+    padding-right: 15vw;
+    padding-left: 15vw;
+}
+/*контейнеры с текстом и списками*/
+.second .cont, .main .third .cont, .fourth .cont {
+    background: url(../img/main_3.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    margin: 3vw 10vw 0 10vw;
+    width: 80vw;    
+    height: 40vw;
+}
+/*внутренние контейнеры с текстом и списками*/
+.second .cont .cont_item, .third .cont .cont_item,
+.fourth .cont .cont_item {
+    padding: 1.4vw 0.7vw;
+    height: 100%;
+    text-align: left;
+}
+
+.second .front_back,
+.third .front_back {
+  position: absolute;
+  -webkit-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.second .front,
+.third .front {
+  z-index: 2;
+}
+
+.second .back,
+.third .back {
+  -webkit-transform: rotateY(180deg);
+  position: relative;
+  z-index: 1;
+  background-color: rgb(0,0,0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.second .wrapper:hover .front,
+.third .wrapper:hover .front {
+  -webkit-transform: rotateY(180deg);
+}
+
+.second .wrapper:hover .back,
+.third .wrapper:hover .back {
+  -webkit-transform: rotateY(0deg);
+  z-index: 3;
+}
+/*промежутки между контейнерами
+у второй и четвёртой секций*/
+
+.fourth .cont .cont_item_1 {
+    border-right: 1vw solid #211c17;
+}
+
+.second .cont .cont_item_1,
+.second .cont .cont_item_2,
+.second .cont .cont_item_3,
+.fourth .cont .cont_item_2 {
+    border-right: 0.5vw solid #211c17;
+    border-left: 0.5vw solid #211c17;
+}
+
+.third .cont .cont_item_2,
+.fourth .cont .cont_item_3 {
+    border-left: 1vw solid #211c17;
+}
+/*параметры таблиц внутри контейнеров*/
+.cont table, .cont table tbody tr {
+    height: 100%;
+    width: 100%;
+}
+/*контейнеры с тенью*/
+.cont_item_ins {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 0.35vw;
+    vertical-align: middle; 
+}
+
+.main .cont_item_ins {
+    padding-left: 0.3vw;
+}
+
+.main .cont_item_ins img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.second .cont .front h3,
+.third .back p {    
+    font-size: 7vw;
+    color: rgb(255, 169, 58);
+    text-decoration: none;
+    font-family: "CorvetteDeco";
+}
+
+.second .cont .front h3 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.second .cont .back .cont_item_ins p {
+    text-align: left;
+    padding: 0.4vw 0 0.4vw 0;
+    color: rgb(255, 169, 58);
+}
+
+.second .cont .back tr .cont_item_ins_sec p {
+    padding: 0.8vw 0 0.8vw 0;
+}
+
+.second .cont .back .cont_item_ins p:hover {
+    background-color: rgb(255, 169, 58);
+    color: #211c17;
+}
+/*отступы между текстом во втором контейнере*/
+.second .cont .cont_item_ins p {
+    padding: 0 0 1.5vw 0;
+}
+/*добавление стилей к спискам
+внутри контейнера*/
+.cont_item_ins ol {
+    list-style-type: disc;
+    color: #d4d4d4;
+}
+
+.cont_item_ins ol li {
+    font-size: 1vw;
+}
+/*цвет третьей секции*/
+.third {
+    background-color: #14110e;
+}
+/*параметры контейнера в третьей секции*/
+.main .third .cont {
+    background: url(../img/main_4.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    margin: 2vw 20vw 0 20vw;
+    height: 30vw;
+    width: 60vw;
+}
+/*отступы у внутреннего контейнера*/
+.third .cont .cont_item {
+    padding: 2vw 1vw;
+}
+
+.third .cont .cont_item_1 {
+    border-right: 1vw solid #14110e;
+}
+
+.third .cont .cont_item_2 {
+    border-left: 1vw solid #14110e;
+}
+
+.third .cont .cont_item_ins {
+    padding-left: 0;
+}
+/*отступы текста в третьей секции*/
+.third p {
+    padding: 1.2vw 15vw 0 15vw;
+}
+
+.third .cont .cont_item p {
+    padding: 0.5vw 0;
+}
+/*отступ сверху у заголовка третьей секции*/
+.third h2 {
+    margin-top: 5vw;
+}
+.fourth {
+    padding-bottom: 0;
+}
+/*фоновый рисунок и высота у контейнера
+в четвёртой секции*/
+.fourth .cont {
+    background: url(../img/main_5.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+  background-size: cover;
+    background-attachment: fixed;
+    height: 55vw;
+  overflow: hidden;
+
+}
+/*параметры текста в четвёртой секции*/
+.fourth .cont .cont_item_ins p {
+    padding: 0.5vw 0;
+}
+/*позиционированние логотипа bs*/
+.footer {
+    padding: 1vw 2vw;
+    margin: 10vw 0 0 0;
+    background-color: #14110e;
+    height: 7vw;
+}
+
+.footer .logo {
+    text-align: left;
+    height: 100%;
+}
+
+.footer .bs {
+    text-align: right;
+    padding: 1vw 0;
+}
+
+.footer img {
+    height: 100%;
+}
+
+.contacts .second {
+    padding-bottom: 0;
+}
+
+.contacts .second .contacts_cont {
+    padding: 5vw 0 3vw 30vw;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item {
+    padding: 2vw 0 0 0;
+    margin: 0;
+    height: 5vw;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item_2 .contacts_cont_item_img {
+    padding: 0.25vw 0 0.25vw 0;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item_img {
+    height: 100%;
+}
+
+.contacts .second .contacts_cont img {
+    height: 100%;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item_2 img {
+    height: 80%;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item_text {
+    padding: 0.7vw 0 0 0;
+    text-align: left;
+}
+
+.contacts_cont_item_text_forw {
+    font-family: "CorvetteDeco";
+    color: rgb(241, 147, 35);
+    opacity: 0.8;
+    font-size: 1.12vw;
+}
+
+.contacts .map {
+    height: 50vw;
+    padding: 3vw 3vw;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.services .first .short,
+.prices .first .short {
+    left: auto;
+    right: 1vw;
+    line-height: 1;
+    font-size: 6vw;
+    top: 33vw;
+}
+
+.services .first .long {
+    line-height: 1;
+    font-size: 6vw;
+    left: 50vw;
+    top: 33vw;
+}
+
+.services .first .extr_long {
+    left: 35vw;
+}
+
+.services .first .roof_long {
+    left: auto;
+    right: 1vw;
+    line-height: 1;
+    font-size: 6vw;
+}
+
+.services .first_second p {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.services .second {
+    padding-top: 5vw;
+    padding-bottom: 0;
+}
+
+.services .second p {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.services .cont_photo {
+    height: 50vw;
+    width: 100%;
+    padding: 5vw 15vw 7vw 15vw;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background-color: #211c17;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 100%;
+}
+
+.services .cont_photo .swiper-container .swiper-button-next {
+    background-image: url(../img/button_next.png);
+}
+
+.services .cont_photo .swiper-container .swiper-button-prev {
+    background-image: url(../img/button_prev.png);
+}
+
+.services .third .cont {
+    margin: 0 1vw;
+    padding: 0;
+    border-left: 1vw solid #14110e;
+    border-right: 1vw solid #14110e;
+}
+
+.services .third .cont .cont_item { 
+    text-align: center;
+    border: 1vw solid #14110e;
+    height: 25vw;
+    padding: 0;
+}
+
+.services .third .cont .cont_item_big {
+    background-color: rgba(240, 147, 35, 0.5);
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    padding: 1vw;
+}
+
+.services .third .cont .cont_item_big .front {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 4vw;
+    font-family: "CorvetteDeco";
+    color: rgb(255,159,68);
+}
+
+.services .third .cont .cont_item_big .front .cont_item_ins {
+    padding: 0;
+    text-align: center;
+}
+
+.services .third .cont .cont_item_big .front .cont_item_ins {
+    text-align: center;
+}
+
+.services .third .cont .cont_item table {
+    background-color: rgba(240, 147, 35, 0.5);
+}
+
+.services .third .cont .cont_item_little table {
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.services .third .cont .cont_item_big table {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services .third .cont .cont_item table td {
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.services .third .cont .cont_item_big table td {
+    cursor: auto;
+    width: 33.333%;
+    text-align: left;
+    padding-left: 7vw;
+}
+
+.services .third .cont .cont_item table td p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    -webkit-transition: padding 1s, width 1s; 
+    -o-transition: padding 1s, width 1s; 
+    transition: padding 1s, width 1s;
+    font-family: "Chalet";
+    color: rgb(255, 138, 0);
+    font-size: 1.5vw;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.services .third .cont .cont_item_big table td p {
+    width: 90%;
+    background-color: rgba(0,0,0,0);
+    padding: 0.8vw;
+    cursor: pointer;
+}
+
+.services .third .cont .cont_item_big:hover {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1vw;
+}
+
+.services .third .cont .cont_item table:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.services .third .cont .cont_item_big table:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services .third .cont .cont_item table:hover p {
+    padding: 2vw 0;
+    width: 40%;
+}
+
+.services .third .cont .cont_item_big table:hover p {
+    padding: 0.8vw;
+    width: 90%;
+}
+
+.services .third .cont .cont_item_big table p:hover {
+    background-color: rgba(240, 147, 35, 0.5);
+    color: rgb(0,0,0);
+}
+
+.services_main .third {
+    -webkit-box-shadow: 0 0 5vw 3vw rgba(20, 17, 14, 1);
+            box-shadow: 0 0 5vw 3vw rgba(20, 17, 14, 1);
+}
+
+.prices .first .short {
+    top: 37vw;
+}
+
+.prices .second {
+    padding-top: 7vw;
+    padding-bottom: 0;
+}
+
+.prices .second {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    -webkit-box-shadow: 0 0 5vw 3vw rgba(33, 28, 23,1);
+            box-shadow: 0 0 5vw 3vw rgba(33, 28, 23,1);
+}
+
+.prices .second h3 {
+    font-size: 2vw;
+    color: rgb(255, 169, 58);
+    text-decoration: none;
+    font-family: "CorvetteDeco";
+    padding-top: 2vw;
+}
+
+.prices .second .prices_top {
+    padding: 0.3vw 0;
+    margin: 2vw 0 0 0;
+    cursor: pointer;
+    background-color: rgb(255, 169, 58);
+    -webkit-border-radius: 0.5vw;
+            border-radius: 0.5vw;
+}
+
+.prices .second h4 {
+    font-family: 'Chalet';
+    font-weight: bold;
+    color: #211c17;
+    padding-top: 0.5vw;
+    text-align: left;
+    padding-left: 1vw;
+    font-size: 1.8vw;
+}
+
+.prices .plus {
+    padding: 0 0 0 2vw;
+    color: #211c17;
+    font-size: 2.5vw;
+    text-align: left;
+    font-weight: bold;
+}
+
+.prices .second table {
+    width: 100%;
+    text-align: left;
+    display: none;
+}
+
+.prices table tr {
+    color: rgb(255, 169, 58);       
+}
+
+.prices .info table tr {
+    color: #212529;
+}
+
+.prices table tr:hover {
+    background-color: rgb(255, 169, 58);
+    color: #211c17;
+}
+
+.prices table td {
+    border: 0.1vw solid rgb(255, 169, 58);
+    font-size: 1.4vw;
+    padding-left: 2vw;
+}
+
+.photo .first h1,
+.video .first h1 {
+    top: 40vw;
+}
+
+.photo .second,
+.video .second {
+    -webkit-box-shadow: 0 0 5vw 3vw rgba(33, 28, 23,1);
+            box-shadow: 0 0 5vw 3vw rgba(33, 28, 23,1);
+}
+
+.photo .second .cont_photo,
+.video .second .cont_photo {
+    margin: 0;
+    padding: 1vw 5vw;
+    height: 12vw;
+    overflow-y: hidden;
+}
+
+.photo .second .cont_photo .col-2,
+.video .second .cont_photo .col-2 {
+    padding: 0 1vw;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.photo .second .cont_photo img,
+.video .second .cont_photo img {
+    width: 100%;
+}
+
+.photo .second .cont_photo img:hover,
+.video .second .cont_photo img:hover {
+    border: 0.3vw solid rgb(255, 169, 58);
+}
+
+.video .second .cont_photo img {
+    cursor: pointer;
+}
+
+.video .video_item {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(33, 28, 23,0.7);
+    padding-top: 10vw;
+    display: none;
+}
+
+.video .video_item iframe {
+    height: 30vw;
+    width: 50%;
+    margin: 0 auto;
+    border: 0.3vw solid rgb(255, 169, 58);
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+.phone_fixed {
+    height: 12vw;
+}
+
+.phone_text {
+    left: 14vw;
+}
+
+.up_fixed {
+    height: 10vw;
+    right: 7vw;
+}
+
+.first {
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+}
+
+.menu_mobile {
+    display: block;
+}
+
+.first .menu, .menu_fixed {
+    display: none;
+}
+
+.first h1, .services .first .short,
+.services .first .long,
+.services .first .roof_long, 
+.prices .first .short {    
+    left: auto;
+    right: 3vw;
+}
+
+.first h1 {
+    line-height: 0.55;
+}
+
+.first_second {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.first_second h2, .second h2,
+.third h2, .fourth h2,
+.prices .second h3 {
+    font-size: 5vw;
+}
+
+.first_second .line, .second .line,
+.third .line, .fourth .line {
+    width: 5vw;
+}
+
+.first_second p, .second p,
+.third p, .fourth p {
+    font-size: 3.5vw;
+}
+
+.second {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.second .cont {
+    height: auto;
+    margin: 3vw 3vw 0 3vw;
+    width: auto;
+}
+
+.second .cont .cont_item_1, 
+.second .cont .cont_item_2, 
+.second .cont .cont_item_3, 
+.fourth .cont .cont_item_2 {
+    border: none;
+    border-top: 2vw solid #211c17;
+}
+
+.second .cont .back .cont_item_ins p {
+    text-align: center;
+}
+
+.second .cont .front h3 {
+    font-size: 6vw;
+}
+
+.main .third .cont {
+    margin: 5vw;
+    width: auto;
+    height: 40vw;
+}
+
+.fourth {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.fourth .cont {
+    width: 100%;
+    margin: 3vw 0 0 0;
+    height: auto;
+}
+
+.fourth .cont .cont_item_1,
+.fourth .cont .cont_item_2,
+.fourth .cont .cont_item_3 {
+    border: none;
+    border-top: 2vw solid #211c17;
+}
+
+.fourth .cont ol {
+    padding-left: 3vw;
+}
+
+.footer {
+    height: 10vw;
+}
+
+.photo .second .cont_photo,
+.video .second .cont_photo {
+    height: auto;
+    padding: 0 5vw;
+}
+
+.photo .second .cont_photo .col-4,
+.video .second .cont_photo .col-4 {
+    padding: 1vw 2vw;
+    height: 25vw;
+    overflow-x: hidden;     
+}
+
+.video .second .cont_photo .col-4 img {
+    height: 100%;
+    width: auto;
+}
+
+.video .video_item {
+    padding-top: 25vw;
+}
+
+.video .video_item iframe {
+    height: 50vw;
+    width: 70%;
+}
+
+.services .cont_photo {
+    padding: 5vw 5vw 7vw 5vw;
+    height: 70vw;
+}
+
+.services .first_second p,
+.services .second p {
+    padding: 1vw 3vw 5vw 3vw;
+}
+
+body .services .third .cont .cont_item_big {
+    height: 45vw;
+}
+
+.services .third .cont .cont_item {
+    height: 35vw;
+}
+
+.services .third .cont .cont_item table td {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.services .third .cont .cont_item_big table td {
+    padding: 0 0 0 2vw;
+}
+
+.services .third .cont .cont_item table td p {
+    font-size: 3.5vw;
+    width: 100%;
+    padding: 7vw 0;
+}
+
+.services .third .cont .cont_item table:hover p {
+    padding: 6vw 0;
+    width: 80%;
+}
+
+.services .third .cont .cont_item_big table:hover p {
+    padding: 0.8vw;
+    width: 100%;
+}
+
+.services .third .cont .cont_item_big table td p {
+    padding: 0.8vw;
+}
+
+.prices .second .prices_top .col-10,
+.prices .second .prices_top .col-2 {
+    padding: 0;
+}
+
+.prices .second h4 {
+    font-size: 2.8vw;
+    padding-left: 2vw;
+    padding-top: 1.5vw;
+}
+
+.prices table td {
+    font-size: 2vw;
+    border: 0.5vw solid rgb(255, 169, 58);
+}
+
+.prices .plus {
+    font-size: 4vw;
+}
+
+.contacts .second .contacts_cont .contacts_cont_item {
+    height: 10vw;
+}
+
+.contacts .second .contacts_cont {
+    padding: 5vw 0 5vw 3vw;
+}
+
+.contacts .second .contacts_cont 
+.contacts_cont_item_text {
+    font-size: 3.5vw;
+}
+
+.contacts_cont_item_text_forw {
+    font-size: 3.5vw;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.prices .second h4 {
+    font-size: 3.5vw;
+}
+
+.prices table td {
+    font-size: 2.7vw;
+}
+
+}
